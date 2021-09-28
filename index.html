@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css">
+    <title>JavaScript Weather App</title>
+  </head>
+  <body class="bg-blue-200">
+    <div class="mt-20" id="app">
+      <h1 class="text-2xl text-center font-sans font-bold mb-4 text-gray-800">Welcome to the weather app</h1>
+      <p class="text-base text-center mb-16 text-gray-800">Type in a city name to get the weather and forecast</p>
+      <div class="container flex justify-center">
+        <input class="bg-white w-full max-w-md rounded-full py-2 px-4 focus:outline-none" type="text" placeholder="Enter city..." id="input">
+        <button class="bg-blue-400 text-white rounded-full py-2 px-4 ml-2" id="button">Search</button>
+      </div>
+      <div class="container flex justify-center mt-16">
+        <div class="text-center">
+          <h1 class="text-4xl mb-2 text-gray-800" id="name"></h1>
+          <p class="text-lg text-gray-700" id="date"></p>
+        </div>
+      </div>
+      <div class="container flex justify-around mt-16">
+        <div class="flex flex-col justify-center items-center">
+          <div class="flex items-center">
+            <div id="icon"></div>
+            <h2 class="text-5xl text-gray-800 font-bold" id="temp"></h2>
+          </div>
+          <p class="text-lg capitalize text-gray-800" id="desc"></p>
+        </div>
+      </div>
+      <div class="container flex justify-around mt-16" id="forecast"></div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
