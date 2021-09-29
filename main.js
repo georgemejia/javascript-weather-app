@@ -19,5 +19,3 @@ async function getWeather() {
 }
 
 button.addEventListener('click', getWeather)
-
-console.log(import.meta.env)
